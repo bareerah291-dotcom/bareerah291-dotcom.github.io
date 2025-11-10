@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaffelbod</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Bestemors <span>Vaffelbod</span></h1>
+        <p>Tid til neste vaffelsalg: <span id="timerUI">0</span></p>
+      </header>
+
+      <main>
+        <section class="shop">
+          <h2>Vaffelbod</h2>
+
+          <div class="images">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"
+              alt="Vaffelrøre"
+              class="icon"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3075/3075983.png"
+              alt="Vaffel"
+              class="icon"
+            />
+          </div>
+
+          <div class="buttons">
+            <button id="makeBatter" onclick="lagRore()">🥣 Lag røre</button>
+            <button id="makeWaffle" onclick="lagvaffel()">🧇 Lag vaffel</button>
+            <button id="increasePrice" onclick="okprisen()">⬆️ Øk pris</button>
+            <button id="decreasePrice" onclick="reduserprisen()">
+              ⬇️ Reduser pris
+            </button>
+          </div>
+        </section>
+
+        <section class="stats">
+          <h2>Statistikk</h2>
+          <ul>
+            <li>Røre: <span id="batter">0</span>/10</li>
+            <li>Vafler: <span id="waffles">0</span>/20stk</li>
+            <li>
+              Penger:
+              <span id="money">32 kr</span>
+            </li>
+            <li>Vafler solgt: <span id="sold">4 stk</span></li>
+            <li>Poeng: <span id="points">360</span></li>
+            <li>Etterspørsel: <span id="demand">55</span>%</li>
+          </ul>
+          <hr />
+          <p>Salgspris: <span id="price">20</span> kr</p>
+          <p>Forventet salg: <span id="expected">6–8 stk/min</span></p>
+        </section>
+      </main>
+    </div>
+
+    <button onclick="alert ('hei')">klikk</button>
+  </body>
+</html>
+<script src="javascript/script.js"></script>
